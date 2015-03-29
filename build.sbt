@@ -1,6 +1,6 @@
 enablePlugins(ScalaJSPlugin)
 
-name := "Tab-Transport"
+name := "Page-Transport"
 
 version := "0.0.1"
 
@@ -10,7 +10,7 @@ scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
 libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.8.0"
 
-libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "0.8.0"
+libraryDependencies += "com.lihaoyi" %%% "upickle" % "0.2.8"
 
 libraryDependencies += "com.lihaoyi" %%% "utest" % "0.3.0" % "test"
 
