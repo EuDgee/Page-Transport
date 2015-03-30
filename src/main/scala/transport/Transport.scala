@@ -12,4 +12,5 @@ trait Transport {
   def dispatch(message: String): Unit
   def addListener(listener: Listener): Unit = listeners ::= listener
   def transferToListeners(message: String) = listeners foreach (_(message))
+  def destroy(): Unit = {}
 }

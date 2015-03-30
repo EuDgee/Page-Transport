@@ -10,7 +10,7 @@ object StorageTest {
       values foreach (tuple => {
         val (key, value) = tuple
         storage.set(key, value)
-        assert(storage.get(key) == value)
+        assert(storage.get(key) == Some(value))
       })
     }
 
@@ -19,8 +19,8 @@ object StorageTest {
       storage.set("key", "value")
       storage.set("key2", "value2")
       storage.remove("key")
-      assert(storage.get("key") == null)
-      assert(storage.get("key2") == "value2")
+      assert(storage.get("key") == None)
+      assert(storage.get("key2") == Some("value2"))
     }
 
     "Clear" - {
@@ -28,8 +28,8 @@ object StorageTest {
       storage.set("key", "value")
       storage.set("key2", "value2")
       storage.clear()
-      assert(storage.get("key") == null)
-      assert(storage.get("key2") == null)
+      assert(storage.get("key") == None)
+      assert(storage.get("key2") == None)
     }
   }
 }
