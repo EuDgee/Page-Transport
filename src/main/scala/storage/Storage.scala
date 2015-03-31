@@ -1,4 +1,4 @@
-package transport
+package storage
 
 trait Storage {
   def get(key: String): Option[String]

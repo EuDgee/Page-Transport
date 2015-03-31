@@ -1,4 +1,4 @@
-package transport
+package storage
 
 import org.scalajs.dom
 

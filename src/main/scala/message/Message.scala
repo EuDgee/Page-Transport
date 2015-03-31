@@ -1,4 +1,4 @@
-package transport
+package message
 
 import upickle._
 

@@ -1,5 +1,6 @@
 package transport
 
+import storage.LocalStorage
 import utest._
 
 object LocalPollingTransportSpec extends TestSuite {
