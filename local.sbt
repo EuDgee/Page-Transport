@@ -1,0 +1,1 @@
+jsDependencies += RuntimeDOM

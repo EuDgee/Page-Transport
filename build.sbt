@@ -20,8 +20,6 @@ scalaJSStage in Global := FastOptStage
 
 skip in packageJSDependencies := false
 
-jsDependencies += RuntimeDOM
-
 persistLauncher in Compile := true
 
 persistLauncher in Test := false
