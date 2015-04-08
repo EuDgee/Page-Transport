@@ -1,7 +1,7 @@
 package transport
 
-import storage.LocalStorage
 import utest._
+import storage.LocalStorage
 
 object LocalPollingTransportSpec extends TestSuite {
   implicit def transportBuilder: () => Transport = () => {
