@@ -1,4 +1,4 @@
-package message
+package tab.message
 
 import upickle._
 
